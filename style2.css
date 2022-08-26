@@ -1,0 +1,86 @@
+ #FirstHeader {
+	text-transform: uppercase; /*текст заглавными буквами*/
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 1.25%;
+	border-bottom: solid #2E8B57 3px;  
+	padding-bottom: 20px;
+	text-align: left;
+	width: 97.5%;
+}
+
+.image {
+	/*margin: 10px 15px 15px 0px;*/
+	height: 300px;
+	width: 22.5%;
+	float: left;
+	margin: 1.25%;
+	background-size: cover; /*чтобы не обрезать каждую картинку; размер картинки зависит от размера браузера*/
+	background-position: center; /*иначе будет по умолчанию левее и выше*/
+	}
+
+.image1{
+	background-image: url("img1.jpg"); 
+}
+
+.image2{
+	background-image: url("img7.jpg"); 
+}
+
+.image3{
+	background-image: url("img5.jpg"); 
+}
+
+.image4{
+	background-image: url("img4.jpg"); 
+}
+
+.image5{
+	background-image: url("img8.jpg"); 
+}
+
+.image6{
+	background-image: url("img2.jpg"); 
+}
+
+.image7{
+	background-image: url("img3.jpg"); 
+}
+
+.image8{
+	background-image: url("img6.jpg"); 
+}
+
+ #data {
+ 	color: #2E8B57;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 110%;
+ 	margin-left: 1.25%;
+ 	letter-spacing: 0.2rem;
+ }
+
+
+ #border {
+ 	border-left: solid #2E8B57 3px; 
+ 	padding-left:10px; 
+ 	height: 70px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	margin-left: 1.25%;
+	width: 97.5%;
+}
+
+#AboutWeb {
+	margin-left: 1.25%;
+	width: 97.5%;
+}
+ hr {
+ 	margin-left: 1.25%;
+	width: 97.5%;
+	margin-bottom: 50px;
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
