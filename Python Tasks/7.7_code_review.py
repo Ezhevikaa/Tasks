@@ -6,33 +6,34 @@
 # и может быть исправлена без изменения других строк.
 # Примечание 1. Число x не превышает по абсолютной величине 10^6, если -10^6 <= x <= 10^6
 # # Примечание 2. При необходимости вы можете добавить необходимые строки кода.
+
 # Было:
-# count = 0
-# p = 0
-# for i in range(1, 10):
-#  x = int(input())
-#  if x > 0:
-#   p = p * x
-#   count = count + 1
-# if count > 0:
-#  print(x)
-#  print(p)
-# else:
-#  print('NO')
-#
+count = 0
+p = 0
+for i in range(1, 10):
+ x = int(input())
+ if x > 0:
+  p = p * x
+  count = count + 1
+if count > 0:
+ print(x)
+ print(p)
+else:
+ print('NO')
+
 # Стало:
-# count = 0
-# p = 1
-# for i in range(1, 11):
-#     x = int(input())
-#     if x >= 0:
-#         p *= x
-#         count += 1
-# if count > 0:
-#     print(count)
-#     print(p)
-# else:
-#     print('NO')
+count = 0
+p = 1
+for i in range(1, 11):
+    x = int(input())
+    if x >= 0:
+        p *= x
+        count += 1
+if count > 0:
+    print(count)
+    print(p)
+else:
+    print('NO')
 
 
 # На обработку поступает последовательность из 10 целых чисел.
@@ -45,31 +46,31 @@
 # Примечание 1. Число x не превышает по абсолютной величине 10^6, если -10^6 ≤x ≤ 10^6.
 # Примечание 2. При необходимости вы можете добавить необходимые строки кода.
 # Было:
-# mx = 0
-# s = 0
-# for i in range(11):
-#     x = int(input())
-#     if x < 0:
-#         s = x
-#     if x > mx:
-#         mx = x
-# print(s)
-# print(mx)
-#
+mx = 0
+s = 0
+for i in range(11):
+    x = int(input())
+    if x < 0:
+        s = x
+    if x > mx:
+        mx = x
+print(s)
+print(mx)
+
 # Стало:
-# mx = -10 ** 6
-# s = 0
-# for i in range(1, 11):
-#     x = int(input())
-#     if x < 0:
-#         s += x
-#     if 0 > x > mx:
-#         mx = x
-# if s < 0:
-#     print(s)
-#     print(mx)
-# else:
-#     print('NO')
+mx = -10 ** 6
+s = 0
+for i in range(1, 11):
+    x = int(input())
+    if x < 0:
+        s += x
+    if 0 > x > mx:
+        mx = x
+if s < 0:
+    print(s)
+    print(mx)
+else:
+    print('NO')
 
 
 # На обработку поступает последовательность из 7 целых чисел.
@@ -79,20 +80,20 @@
 # Найдите все ошибки в этой программе (их ровно 4).
 # Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
 # Было:
-# s = 1
-# for i in range(1, 7):
-#     n = input()
-#     if i % 2 == 0:
-#         s = s + n
-# print(s)
+s = 1
+for i in range(1, 7):
+    n = input()
+    if i % 2 == 0:
+        s = s + n
+print(s)
 
 # Стало:
-# s = 0
-# for i in range(1, 8):
-#     n = int(input())
-#     if n % 2 == 0 or n == 0:
-#         s += n
-# print(s)
+s = 0
+for i in range(1, 8):
+    n = int(input())
+    if n % 2 == 0 or n == 0:
+        s += n
+print(s)
 
 
 # На обработку поступает натуральное число.
@@ -102,32 +103,32 @@
 # Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
 # Примечание 1. Число 0 делится на любое натуральное число.
 # Было:
-# n = int(input())
-# max_digit = n % 10
-# while n > 0:
-#     digit = n % 10
-#     if digit % 3 == 0:
-#         if digit < max_digit:
-#             digit = max_digit
-#     n = n % 10
-# if max_digit == 0:
-#     print('NO')
-# else:
-#     print(max_digit)
+n = int(input())
+max_digit = n % 10
+while n > 0:
+    digit = n % 10
+    if digit % 3 == 0:
+        if digit < max_digit:
+            digit = max_digit
+    n = n % 10
+if max_digit == 0:
+    print('NO')
+else:
+    print(max_digit)
 
 # Стало:
-# n = int(input())
-# max_digit = -1
-# while n > 0:
-#     digit = n % 10
-#     if digit % 3 == 0:
-#         if digit > max_digit:
-#             max_digit = digit
-#     n = n // 10
-# if max_digit == -1:
-#     print('NO')
-# else:
-#     print(max_digit)
+n = int(input())
+max_digit = -1
+while n > 0:
+    digit = n % 10
+    if digit % 3 == 0:
+        if digit > max_digit:
+            max_digit = digit
+    n = n // 10
+if max_digit == -1:
+    print('NO')
+else:
+    print(max_digit)
 
 
 # На обработку поступает натуральное число.
@@ -136,23 +137,23 @@
 # Найдите все ошибки в этой программе (их ровно 2).
 # Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
 # Было:
-# n = int(input())
-# while n > 0:
-#     n %= 10
-# print(n)
+n = int(input())
+while n > 0:
+    n %= 10
+print(n)
 
 # Стало:
-# n = int(input())
-# while n > 0:
-#     num = n % 10
-#     n //= 10
-# print(num)
-#
+n = int(input())
+while n > 0:
+    num = n % 10
+    n //= 10
+print(num)
+
 # Or
-# n = int(input())
-# while n > 0:
-#     n //= 10
-# print(n)
+n = int(input())
+while n > 0:
+    n //= 10
+print(n)
 
 
 # На обработку поступает натуральное число.
@@ -161,19 +162,19 @@
 # Найдите все ошибки в этой программе (их ровно 3).
 # Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
 # Было:
-# n = input()
-# product = n % 10
-# while n >= 10:
-#     digit = n % 10
-#     product = product * digit
-#     n //= 10
-# print(product)
+n = input()
+product = n % 10
+while n >= 10:
+    digit = n % 10
+    product = product * digit
+    n //= 10
+print(product)
 
 # Стало
-# n = int(input())
-# product = 1
-# while n > 0:
-#     digit = n % 10
-#     product = product * digit
-#     n //= 10
-# print(product)
+n = int(input())
+product = 1
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n //= 10
+print(product)
