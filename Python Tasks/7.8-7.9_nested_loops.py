@@ -1,71 +1,71 @@
 # Дано натуральное число n, (n≤ 9). Напишите программу, которая печатает таблицу размером n×3,
 # состоящую из данного числа (числа отделены одним пробелом)
-# n = int(input())
-# for i in range(n):
-#     for j in range(3):
-#         print(n, end=' ')
-#     print()
+n = int(input())
+for i in range(n):
+    for j in range(3):
+        print(n, end=' ')
+    print()
 
 
 # Дано натуральное число n, (n≤ 9). Напишите программу, которая печатает таблицу размером n×5,
 # где в i-ой строке указано число i (числа отделены одним пробелом).
-# n = int(input())
-# for i in range(1, n + 1):
-#     for j in range(1, 6):
-#         print(i, end=' ')
-#     print()
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, 6):
+        print(i, end=' ')
+    print()
 
 
 # Дано натуральное число n (n≤ 9).
 # Напишите программу, которая печатает таблицу сложения для всех чисел от 1 до n в соответствии с примером.
-# n = int(input())
-# for i in range(1, n + 1):
-#     for j in range(1, 10):
-#         print(i, '+', j, '=', i + j)
-#     print()
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, 10):
+        print(i, '+', j, '=', i + j)
+    print()
 
 
 # Дано нечетное натуральное число n.
 # Напишите программу, которая печатает равнобедренный звездный треугольник с основанием, равным n в соответствии с примером:
 # Используйте вложенный цикл for.
-# n = int(input())
-# for i in range(1, n // 2 + 2):
-#     for j in range(i):
-#         print('*', end='')
-#     print()
-# for k in range(n // 2, 0, -1):
-#     for l in range(k):
-#         print('*', end='')
-#     print()
+n = int(input())
+for i in range(1, n // 2 + 2):
+    for j in range(i):
+        print('*', end='')
+    print()
+for k in range(n // 2, 0, -1):
+    for l in range(k):
+        print('*', end='')
+    print()
 
 
 # Дано натуральное число n.
 # Напишите программу, которая печатает численный треугольник в соответствии с примером:
 # Используйте вложенный цикл for.
-# n = int(input())
-# for i in range(1, n + 1):
-#     for j in range(i):
-#         print(i, end='')
-#     print()
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(i):
+        print(i, end='')
+    print()
 
 
 # Решите уравнение в натуральных числах 28n + 30 k + 31 m = 365.
 # Используйте вложенный цикл for. В первую очередь запишите решение с наименьшим значением n.
-# for n in range(1, 14):
-#     for k in range(1, 14):
-#         for m in range(1, 14):
-#             if 28 * n + 30 * k + 31 * m == 365:
-#                 print('n =', n, 'k =', k, 'm =', m, sep=' ')
+for n in range(1, 14):
+    for k in range(1, 14):
+        for m in range(1, 14):
+            if 28 * n + 30 * k + 31 * m == 365:
+                print('n =', n, 'k =', k, 'm =', m, sep=' ')
 
 
 # Имеется 100 рублей. Сколько быков, коров и телят можно купить на все эти деньги, если плата за быка – 10 рублей,
 # за корову – 5 рублей, за теленка – 0.5 рубля и надо купить 100 голов скота?
 # Используйте вложенный цикл for.
-# for x in range(1, 11):
-#     for y in range(1, 21):
-#         for z in range(1, 201):
-#             if x + y + z == 100 and x * 10 + y * 5 + z * 0.5 == 100:
-#                 print('x =', x, 'y =', y, 'z =', z, sep=' ')
+for x in range(1, 11):
+    for y in range(1, 21):
+        for z in range(1, 201):
+            if x + y + z == 100 and x * 10 + y * 5 + z * 0.5 == 100:
+                print('x =', x, 'y =', y, 'z =', z, sep=' ')
 
 
 # В 1769 году Леонард Эйлер сформулировал обобщенную версию Великой теоремы Ферма, предполагая,
@@ -80,38 +80,38 @@
 # Примечание 3. Программа может работать дольше чем обычно.
 # В зависимости от способа решения задачи на выполнение программы может уходить до нескольких минут.
 # Попробуйте сократить количество вложенных циклов.
-# for a in range(1, 151):
-#     for b in range(a, 151):
-#         for c in range(b, 151):
-#             for d in range(c, 151):
-#                 x = a ** 5 + b ** 5 + c ** 5 + d ** 5
-#                 e = int(x ** (1/5))
-#                 if x == e ** 5:
-#                     print(a + b + c + d + e)
+for a in range(1, 151):
+    for b in range(a, 151):
+        for c in range(b, 151):
+            for d in range(c, 151):
+                x = a ** 5 + b ** 5 + c ** 5 + d ** 5
+                e = int(x ** (1/5))
+                if x == e ** 5:
+                    print(a + b + c + d + e)
 
 
 # Дано натуральное число n.
 # Напишите программу, которая печатает численный треугольник с высотой равной n, в соответствии с примером:
 # Примечание. Используйте вложенный цикл for.
-# n = int(input())
-# total = 0
-# for i in range(1, n + 1):
-#     for j in range(i):
-#         total += 1
-#         print(total, end=' ')
-#     print()
+n = int(input())
+total = 0
+for i in range(1, n + 1):
+    for j in range(i):
+        total += 1
+        print(total, end=' ')
+    print()
 
 
 # Дано натуральное число nn.
 # Напишите программу, которая печатает численный треугольник с высотой равной n, в соответствии с примером:
 # Используйте вложенный цикл for.
-# n = int(input())
-# for i in range(1, n + 1):
-#     for j in range(1, i + 1):
-#         print(j, end='')
-#     for k in range(i, 1, -1):
-#         print(k - 1, end='')
-#     print()
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end='')
+    for k in range(i, 1, -1):
+        print(k - 1, end='')
+    print()
 
 
 # На вход программе подается два натуральных числа a и b (a< b).
@@ -119,31 +119,31 @@
 # Программа должна вывести два числа на одной строке, разделенных пробелом:
 # число с максимальной суммой делителей и сумму его делителей.
 # Если таких чисел несколько, то выведите наибольшее из них.
-# sum_count = 0
-# largest = 0
-# a, b = int(input()), int(input())
-# for i in range(a, b + 1):
-#     total = 0
-#     for j in range(1, i + 1):
-#         if i % j == 0:
-#             total += j
-#             if total >= sum_count:
-#                 sum_count = total
-#                 largest = i
-# print(largest, sum_count)
+sum_count = 0
+largest = 0
+a, b = int(input()), int(input())
+for i in range(a, b + 1):
+    total = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            total += j
+            if total >= sum_count:
+                sum_count = total
+                largest = i
+print(largest, sum_count)
 
 
 # На вход программе подается натуральное число n.
 # Напишите программу, выводящую графическое изображение делимости чисел от 1 до n включительно.
 # В каждой строке надо напечатать очередное число и столько символов «+», сколько делителей у этого числа.
-# n = int(input())
-# for i in range(1, n + 1):
-#     counter = 0
-#     for j in range(1, i + 1):
-#         if i % j == 0:
-#             counter += 1
-#     print(i, counter * '+')
-# print()
+n = int(input())
+for i in range(1, n + 1):
+    counter = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            counter += 1
+    print(i, counter * '+')
+print()
 
 
 # На вход программе подается натуральное число n.
@@ -152,37 +152,37 @@
 # затем все цифры найденной суммы и повторить этот процесс, то в результате будет получено однозначное число (цифра),
 # которое и называется цифровым корнем данного числа.
 # Используйте вложенные циклы while
-# n = int(input())
-# while n > 9:
-#     sum = 0
-#     while n > 0:
-#         num = n % 10
-#         sum += num
-#         n = n // 10
-#     n = sum
-# print(n)
+n = int(input())
+while n > 9:
+    sum = 0
+    while n > 0:
+        num = n % 10
+        sum += num
+        n = n // 10
+    n = sum
+print(n)
 
 
 # Дано натуральное число n. Напишите программу, которая выводит значение суммы 1!+2!+3!+…+n!.
 # Факториалом натурального числа n, называется произведение всех натуральных чисел от 1 до n,
 # Задачу можно решить без вложенного цикла. Напишите две версии программы
-# n = int(input())
-# total = 1
-# total_max = 0
-# for i in range(1, n + 1):
-#     for j in range(1, i + 1):
-#         total *= j
-#     total_max += total
-#     total = 1
-# print(total_max)
+n = int(input())
+total = 1
+total_max = 0
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        total *= j
+    total_max += total
+    total = 1
+print(total_max)
 
 # or
-# from math import factorial
-# n = int(input())
-# total = 0
-# for i in range(1, n + 1):
-#     total += factorial(i)
-# print(total)
+from math import factorial
+n = int(input())
+total = 0
+for i in range(1, n + 1):
+    total += factorial(i)
+print(total)
 
 
 # На вход программе подается два натуральных числа a и b (a< b).
@@ -198,7 +198,3 @@ for i in range(a, b + 1):
             count += 1
     if count == 2:
         print(i)
-
-
-
-
