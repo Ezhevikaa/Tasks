@@ -1,11 +1,11 @@
 # На вход программе подается число n, n>1.
 # Напишите программу, которая выводит его наименьший отличный от 1 делитель.
 # Используйте оператор break при обнаружении делителя.
-# n = int(input())
-# for i in range(2, n+1):
-#     if n % i == 0:
-#         break
-# print(i)
+n = int(input())
+for i in range(2, n+1):
+    if n % i == 0:
+        break
+print(i)
 
 
 # На вход программе подается натуральное число n.
@@ -14,12 +14,12 @@
 # чисел от 17 до 37 включительно;
 # чисел от 78 до 87 включительно.
 # Используйте оператор continue
-# n = int(input())
-# for i in range(1, n + 1):
-#     if 5 <= i <= 9:
-#         continue
-#     if 17 <= i <= 37:
-#         continue
-#     if 78 <= i <= 87:
-#         continue
-#     print(i)
+n = int(input())
+for i in range(1, n + 1):
+    if 5 <= i <= 9:
+        continue
+    if 17 <= i <= 37:
+        continue
+    if 78 <= i <= 87:
+        continue
+    print(i)
